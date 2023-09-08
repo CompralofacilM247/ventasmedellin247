@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>ventas247</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+        <script>src="/usuario/script.js"</script>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="inicio.html"></script>
+        <script rel="Untitled-1.html"></script>
+    
+
+
+</head>
+
+<body>
+
+    <header id="header">
+       <!-- Header -->
+ <div x-data="{ open: false }" class="header1">
+  <!-- Logo -->
+  <div class="header__logo">
+
+  </div>
+  <!-- Boton abrir -->
+  <button class="header__button-nav--open" x-on:click="open = true">Abrir</button>
+  <!-- Navegador -->
+  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+    <!-- Boton cerrar -->
+    <div class="nav__button" x-on:click="open = false">
+      <button class="header__button-nav--close">Cerrar</button>
+    </div>
+    <!-- Menu -->
+    <ul class="nav__ul">
+      <li class="nav__item"><a href="#" class="nav__link">Instagram.</a></li>
+      <li class="nav__item"><a href="/usuario/inicio/index.html" class="nav__link">Galery.</a></li>
+      <li class="nav__item"><a href="/LOGIN/login.html" class="nav__link">administracion.</a></li>
+    </ul>
+  </nav>
+  <!-- Fin Navegador -->
+</div>  
+      
+
+
+<h1>Ventas 24/7</h1>
+    <div>
+        <img id="carrito" class="carrito" src="/img/carrito-de-compras.png" alt="">
+        <div id="numero"></div>
+    </div>
+
+
+   
+        
+    </header>
+
+
+    
+
+
+    <main>
+        <div id="contenedor" class="contenedor"> </div>
+    </main>
+    
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+            <h2>Cesta</h2>
+            <p class="x" id="x">x</p>
+        </div>
+
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button>Finalizar Compra</button>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
