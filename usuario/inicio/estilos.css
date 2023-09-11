@@ -318,9 +318,8 @@ body{
 	margin-top:16px;
 }
 .logohead {
-	display: flex;
-	margin-top: 11%;
-	height: 300px;
+	display: block;
+	margin-top: 12%;
 	
 	
 
