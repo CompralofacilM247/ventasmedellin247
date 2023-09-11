@@ -7,12 +7,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="main.js" async></script>
-    <title>Tienda de Relojes | </title>
+    <title>Ventas 24/7 Medellin | </title>
 </head>
 <body>
-    <header>
-        
+     <header>
+        <!-- Header -->
+<header x-data="{ open: false }" class="header">
+    <!-- Logo -->
+    <div class="header__logo">
+      <img src="images/" alt="">
+    </div>
+    <!-- Boton abrir -->
+    <button class="header__button-nav--open" x-on:click="open = true">Abrir</button>
+    <!-- Navegador -->
+    <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+      <!-- Boton cerrar -->
+      <div class="nav__button" x-on:click="open = false">
+        <button class="header__button-nav--close">Cerrar</button>
+      </div>
+      <!-- Menu -->
+      <ul class="nav__ul">
+        <li class="nav__item"><a href="#" class="nav__link">Instagram.</a></li>
+        <li class="nav__item"><a href="/usuario/inicio.html" class="nav__link">Carrito.</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Quienes somos.</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contactanos.</a></li>
+      </ul>
+    </nav>
+    <!-- Fin Navegador -->
     </header>
+    <div class="imgmg">
+
+        <center><img src="/usuario/inicio/images/logoventas.png" alt=""></center>
+        
+    </div>
     <section class="contenedor">
         <!-- Contenedor de elementos -->
         <div class="contenedor-items">
