@@ -318,7 +318,7 @@ body{
 	margin-top:16px;
 }
 .logohead {
-	display: block;
+	display: flex;
 	margin-top: 11%;
 	height: 300px;
 	
