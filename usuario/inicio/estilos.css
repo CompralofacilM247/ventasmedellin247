@@ -319,6 +319,10 @@ body{
 }
 .logohead {
 	display: block;
-	margin-top: 12%;
+	margin-top: 11%;
+	height: 300px;
+	width: auto;
+	
+
 }
 
