@@ -26,6 +26,8 @@ body{
 	text-align: center;
 	margin: 50px 0px;
 	margin-top: 20%;
+		margin-top: 25%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .wrap > h1:after{
