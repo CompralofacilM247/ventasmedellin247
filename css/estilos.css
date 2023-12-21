@@ -614,7 +614,7 @@ section {
     width: 100% !important;
   }
   .product_img {
-    width: calc(100vw - 6%) !important;
+    width: calc(50vw - 6%) !important;
     height: 150px !important;
   }
   h4.title {
