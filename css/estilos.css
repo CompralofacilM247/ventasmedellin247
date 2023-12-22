@@ -485,6 +485,13 @@ footer {
         height: 250px;
     }
 }
+/* Media query para dispositivos con un ancho de pantalla de hasta 767px (celulares y tablets) */
+@media screen and (max-width: 767px) {
+  .slider-card {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 .slider .card .img:hover {
     filter: brightness(75%);
