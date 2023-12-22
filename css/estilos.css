@@ -566,7 +566,7 @@ h1 {
     }
 
     .slider .card {
-	    padding: 400px;
+	    display: block;
 	flex-basis: calc(100% - 20px);
         margin: 0 10px 20px;
     }
