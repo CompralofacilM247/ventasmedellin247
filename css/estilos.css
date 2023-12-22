@@ -442,8 +442,8 @@ footer {
 	margin-top: 15%;
 }
 
-  :root {
-    
+ 
+:root {
     --card-bg: #1c1c1c;
     --border: 1px solid #3c3c3a;
     --shadow: 0px 10px 15px 0.3px rgba(0, 0, 0, 0.411);
@@ -451,17 +451,14 @@ footer {
     --sub-text: #909090;
 }
 
-
-
-
-
 .slider {
-	margin-top: 5%;
-	max-width: 1100px;
+    margin-top: 5%;
+    max-width: 1100px;
     height: 427px;
     display: flex;
     background: transparent;
 }
+
 .slider .card {
     flex: 1;
     margin: 0 10px;
@@ -479,9 +476,17 @@ footer {
     transition: all 0.2s ease;
     overflow: hidden;
 }
+
+@media screen and (max-width: 767px) {
+    .slider .card .img {
+        height: 250px;
+    }
+}
+
 .slider .card .img:hover {
     filter: brightness(75%);
 }
+
 .slider .card .img img {
     height: 100%;
     width: 100%;
@@ -490,19 +495,21 @@ footer {
 }
 
 .slider .card .img img:hover {
-    transform: scale(1.1); /* Scale up by 10% on hover */
+    transform: scale(1.1);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .slider .card .content {
     padding: 10px 20px;
 }
+
 .card .content .title {
     text-align: justify;
     font-size: 25px;
     font-weight: 500;
     color: var(--text);
 }
+
 .card .content .sub-title {
     font-size: 16px;
     font-weight: 400;
@@ -515,8 +522,8 @@ footer {
     text-align: justify;
     margin: 10px 0;
     color: var(--sub-text);
-    line-height: 1.5; /* Adjust the line height as needed */
-    max-height: 6em; /* 4 lines multiplied by the line height (adjust as needed) */
+    line-height: 1.5;
+    max-height: 6em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
@@ -540,9 +547,6 @@ footer {
     bottom: 15px;
     opacity: 1;
 }
-
-
-
 
 
 
