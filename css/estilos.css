@@ -461,7 +461,15 @@ footer {
     display: flex;
     background: transparent;
 }
+@media screen and (max-width: 767px) {
+    .slider {
+        flex-direction: column; /* Cambia a dirección de columna en dispositivos móviles */
+    }
 
+    .slider .card {
+        flex-basis: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    }
+}
 .slider .card {
     flex: 1;
     margin: 0 10px;
@@ -495,6 +503,7 @@ footer {
         width: 100%; /* Ajusta el ancho del contenedor principal al 100% */
     }
 }
+
 
 .slider .card .img:hover {
     filter: brightness(75%);
