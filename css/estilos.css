@@ -485,12 +485,15 @@ footer {
         height: 250px;
     }
 }
-/* Media query para dispositivos con un ancho de pantalla de hasta 767px (celulares y tablets) */
 @media screen and (max-width: 767px) {
-  .slider-card {
-    width: 250px;
-    height: 250px;
-  }
+    .slider .card {
+        flex: 0 0 100%; /* Cambia el ancho a 100% para que ocupe todo el ancho de la pantalla */
+        max-width: 100%; /* Asegúrate de que no exceda el ancho máximo */
+    }
+
+    .slider ul {
+        width: 100%; /* Ajusta el ancho del contenedor principal al 100% */
+    }
 }
 
 .slider .card .img:hover {
