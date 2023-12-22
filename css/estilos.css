@@ -560,18 +560,18 @@ h1 {
 }
 @media screen and (max-width: 767px) {
     .slider {
-      width: 100%; /* O ajusta el ancho según tus necesidades */
-        max-width: 100%; /* Asegura que no exceda el ancho del viewport */
-        margin: 0 auto 20px; /* Agrega margen inferior para separar de otros elementos */
-        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
-        padding: 10px; /* O ajusta el padding según tus necesidades */
-    
+      
 	flex-direction: column;
         margin-bottom: 20px; /* Añade margen inferior para separar de otros contenidos */
     }
 
     .slider .card {
-	   
+	   width: 100%; /* O ajusta el ancho según tus necesidades */
+        max-width: 100%; /* Asegura que no exceda el ancho del viewport */
+        margin: 0 auto 20px; /* Agrega margen inferior para separar de otros elementos */
+        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+        padding: 10px; /* O ajusta el padding según tus necesidades */
+    
 	flex-basis: calc(100% - 20px);
         margin: 0 10px 20px;
     }
