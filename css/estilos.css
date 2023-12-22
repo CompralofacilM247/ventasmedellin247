@@ -560,11 +560,32 @@ h1 {
 }
 @media screen and (max-width: 767px) {
     .slider {
-        flex-direction: column; /* Cambia a dirección de columna en dispositivos móviles */
+        flex-direction: column;
+        margin-bottom: 20px; /* Añade margen inferior para separar de otros contenidos */
     }
 
     .slider .card {
-   
-        flex-basis: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+        flex-basis: calc(100% - 20px);
+        margin: 0 10px 20px;
+    }
+
+    .slider .card .img {
+        height: auto; /* Ajusta la altura a automático para mantener la proporción */
+    }
+
+    .slider .card .content {
+        padding: 10px;
+    }
+
+    .card .content .title {
+        font-size: 20px; /* Ajusta el tamaño de fuente */
+    }
+
+    .card .content .sub-title {
+        font-size: 14px; /* Ajusta el tamaño de fuente */
+    }
+
+    .card .content p {
+        max-height: none; /* Permite que el texto fluya naturalmente en dispositivos móviles */
     }
 }
