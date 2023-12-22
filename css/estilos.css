@@ -560,13 +560,14 @@ h1 {
 }
 @media screen and (max-width: 767px) {
     .slider {
-       
+       position: relative;
+    z-index: 1;
 	flex-direction: column;
         margin-bottom: 20px; /* Añade margen inferior para separar de otros contenidos */
     }
 
     .slider .card {
-	    display: block;
+	   
 	flex-basis: calc(100% - 20px);
         margin: 0 10px 20px;
     }
