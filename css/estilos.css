@@ -558,26 +558,27 @@ h1 {
     bottom: 15px;
     opacity: 1;
 }
+/* Establece un z-index más alto para los elementos que no deben superponerse */
+.otro-elemento {
+    z-index: 2;
+}
+
 @media screen and (max-width: 767px) {
     .slider {
-      
-	flex-direction: column;
-        margin-bottom: 20px; /* Añade margen inferior para separar de otros contenidos */
+        flex-direction: column;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1; /* Establece un z-index menor para el slider */
     }
 
     .slider .card {
-	   width: 100%; /* O ajusta el ancho según tus necesidades */
-        max-width: 100%; /* Asegura que no exceda el ancho del viewport */
-        margin: 0 auto 20px; /* Agrega margen inferior para separar de otros elementos */
-        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
-        padding: 10px; /* O ajusta el padding según tus necesidades */
-    
-	flex-basis: calc(100% - 20px);
-        margin: 0 10px 20px;
+        flex-basis: calc(100% - 20px);
+        margin: 0 0 20px;
+        width: 100%;
     }
 
     .slider .card .img {
-        height: auto; /* Ajusta la altura a automático para mantener la proporción */
+        height: auto;
     }
 
     .slider .card .content {
@@ -585,14 +586,14 @@ h1 {
     }
 
     .card .content .title {
-        font-size: 20px; /* Ajusta el tamaño de fuente */
+        font-size: 20px;
     }
 
     .card .content .sub-title {
-        font-size: 14px; /* Ajusta el tamaño de fuente */
+        font-size: 14px;
     }
 
     .card .content p {
-        max-height: none; /* Permite que el texto fluya naturalmente en dispositivos móviles */
+        max-height: none;
     }
 }
