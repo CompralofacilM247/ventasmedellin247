@@ -560,7 +560,8 @@ h1 {
 }
 @media screen and (max-width: 767px) {
     .slider {
-        flex-direction: column;
+        display: flex;
+	flex-direction: column;
         margin-bottom: 20px; /* Añade margen inferior para separar de otros contenidos */
     }
 
