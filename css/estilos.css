@@ -25,7 +25,7 @@ body{
 	flex-direction: column;
 	text-align: center;
 	margin: 50px 0px;
-	margin-top: 25%;
+	margin-top: 15%;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -44,7 +44,7 @@ body{
 	flex-direction: column;
 	text-align: center;
 	margin: 10px 0px;
- 	margin-top: 0%;
+
 	
 }
 .store-wrapper{
@@ -344,110 +344,6 @@ body{
 
 
 
-   html {
-	box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-	box-sizing: inherit;
-  }
-  
-  body {
-	background: rgb(34,193,195);
-	background: linear-gradient(124deg, rgba(34,193,195,1) 0%, rgba(45,94,253,1) 100%);
-	background-size: cover;
-	background-attachment: fixed;
-  }
-  
-  .visually-hidden { 
-	position: absolute !important;
-	height: 1px; 
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	white-space: nowrap; /* added line */
-  }
-  
-  .slider {
-	position: relative;
-	max-width: 900px;
-	padding: 0 15px;
-	margin: 30px auto;
-  }
-  
-  .slider-list {
-	display: flex;
-	padding: 0;
-	
-	margin: 0;
-	overflow: hidden;
-	list-style-type: none;
-  }
-  
-  .slider-item {
-	opacity: 0;
-	width: 0%;
-	flex-shrink: 0;
-	z-index: 1;
-	transition: opacity 1s;
-  }
-  
-  #slider-control-1:checked ~ .slider-list .slider-item:nth-child(1),
-  #slider-control-2:checked ~ .slider-list .slider-item:nth-child(2),
-  #slider-control-3:checked ~ .slider-list .slider-item:nth-child(3),
-  #slider-control-4:checked ~ .slider-list .slider-item:nth-child(4),
-  #slider-control-5:checked ~ .slider-list .slider-item:nth-child(5) {
-	opacity: 100;
-	width: 100%;
-	transition: opacity 0.5s;
-  }
-  
-  .slider-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	z-index: 1;
-  }
-  
-  .slider-controls {
-	position: absolute;
-	bottom: 30px;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	z-index: 999;
-  }
-  
-  .slider-controls label {
-	width: 5px;
-	height: 5px;
-	margin: 0 5px;
-	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0);
-	font-size: 0;
-	cursor: pointer;
-	z-index: 999;
-  }
-  
-  .slider-controls label:hover,
-  #slider-control-1:checked ~ .slider-controls label:nth-child(1),
-  #slider-control-2:checked ~ .slider-controls label:nth-child(2),
-  #slider-control-3:checked ~ .slider-controls label:nth-child(3),
-  #slider-control-4:checked ~ .slider-controls label:nth-child(4),
-  #slider-control-5:checked ~ .slider-controls label:nth-child(5) {
-	background-color: #ffffff;
-  }
-
-
-
-
-
-
-
-
 
 
 
@@ -462,7 +358,6 @@ footer {
 	background-color: rgba(27, 27, 27, 0.8); /* Gris claro con opacidad del 80% */
 	color: #fff; /* Texto en color blanco */
 	padding: 20px;
-	 width: 100%
   }
   
   .footer-content {
@@ -529,6 +424,122 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgportada{
+	margin-top: 15%;
+}
+
+  :root {
+    
+    --card-bg: #1c1c1c;
+    --border: 1px solid #3c3c3a;
+    --shadow: 0px 10px 15px 0.3px rgba(0, 0, 0, 0.411);
+    --text: #ffffff;
+    --sub-text: #909090;
+}
+
+
+
+
+
+.slider {
+	margin-top: 5%;
+	max-width: 1100px;
+    height: 427px;
+    display: flex;
+    background: transparent;
+}
+.slider .card {
+    flex: 1;
+    margin: 0 10px;
+    background: var(--card-bg);
+    border: var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.slider .card .img {
+    height: 200px;
+    margin: 16px;
+    width: calc(100% - 32px);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+.slider .card .img:hover {
+    filter: brightness(75%);
+}
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+
+.slider .card .img img:hover {
+    transform: scale(1.1); /* Scale up by 10% on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+}
+.card .content .title {
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text);
+}
+.card .content .sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--sub-text);
+    line-height: 20px;
+    text-align: left;
+}
+
+.card .content p {
+    text-align: justify;
+    margin: 10px 0;
+    color: var(--sub-text);
+    line-height: 1.5; /* Adjust the line height as needed */
+    max-height: 6em; /* 4 lines multiplied by the line height (adjust as needed) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.card .content button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 24px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: bottom 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.card:hover button {
+    bottom: 15px;
+    opacity: 1;
+}
 
 
 
