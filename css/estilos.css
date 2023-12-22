@@ -560,13 +560,14 @@ h1 {
 }
 @media screen and (max-width: 767px) {
     .slider {
-        display: flex;
-	padding: 15px;
+       
 	flex-direction: column;
         margin-bottom: 20px; /* Añade margen inferior para separar de otros contenidos */
     }
 
     .slider .card {
+	     display: flex;
+	padding: 15px;
         flex-basis: calc(100% - 20px);
         margin: 0 10px 20px;
     }
