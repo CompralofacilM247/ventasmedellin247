@@ -438,7 +438,7 @@ footer {
 
 
 .imgportada {
-    margin-top: 15%; /* Estilo predeterminado para computadoras */
+    margin-top: 5%; /* Estilo predeterminado para computadoras */
 
     /* Media query para dispositivos con un ancho de pantalla de hasta 767px (celulares) */
     @media screen and (max-width: 767px) {
