@@ -547,6 +547,16 @@ footer {
     bottom: 15px;
     opacity: 1;
 }
+@media screen and (max-width: 767px) {
+    .slider .card .img {
+        height: auto; /* Cambiado a 'auto' para mantener la proporción */
+    }
+
+    .slider .card .img img {
+        width: 100%; /* Ajuste del ancho al 100% */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+}
 
 
 
